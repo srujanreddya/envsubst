@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: wangyoucao577/go-release-action@v1.35
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GIT_TOKEN }}
         goos: linux
         goarch: amd64
         project_path: cmd/envsubst
@@ -25,7 +25,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: wangyoucao577/go-release-action@v1.35
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GIT_TOKEN }}
         goos: linux
         goarch: arm64
         project_path: cmd/envsubst
@@ -38,7 +38,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: wangyoucao577/go-release-action@v1.35
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GIT_TOKEN }}
         goos: darwin
         goarch: amd64
         project_path: cmd/envsubst
@@ -51,7 +51,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: wangyoucao577/go-release-action@v1.35
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GIT_TOKEN }}
         goos: darwin
         goarch: arm64
         project_path: cmd/envsubst
@@ -64,7 +64,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: wangyoucao577/go-release-action@v1.35
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GIT_TOKEN }}
         goos: windows
         goarch: amd64
         project_path: cmd/envsubst
